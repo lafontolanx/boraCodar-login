@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Content, Email, ForgetPassword, Form, Input, InputContainer, Label, Link, Password } from "./style";
+import { Container, Content, ForgetPassword, Form, Input, InputContainer, InputFrame, Label, Link } from "./style";
 
 export const Login = () => {
     return (
@@ -11,18 +11,18 @@ export const Login = () => {
                 </Content>
 
                 <InputContainer>
-                    <Email>
+                    <InputFrame>
                         <Label>E-mail</Label>
-                        <Input type="text" placeholder="Digite seu e-mail" />
-                    </Email>
+                        <Input type="e-mail" placeholder="Digite seu e-mail" />
+                    </InputFrame>
                     
-                    <Password>
+                    <InputFrame>
                         <ForgetPassword>
                             <Label>Senha</Label>
                             <Link>Esqueci minha senha</Link>
                         </ForgetPassword>
                         <Input type="password" placeholder="Digite sua senha" />
-                    </Password>
+                    </InputFrame>
                 </InputContainer>
             </Form>            
         </Container>

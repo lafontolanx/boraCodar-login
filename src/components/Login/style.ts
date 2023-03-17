@@ -53,18 +53,11 @@ export const Label = styled.label`
     color: var(--gray-800);
 `
 
-export const Email = styled.div`
+export const InputFrame = styled.div`
     display: flex;
     flex-direction: column;
 
     gap: 0.5rem; 
-`
-
-export const Password = styled.div`
-    display: flex;
-    flex-direction: column;
-
-    gap: 0.5rem;
 `
 
 export const ForgetPassword = styled.div`
@@ -72,7 +65,40 @@ export const ForgetPassword = styled.div`
     justify-content: space-between;
 `
 
-export const Link = styled.a``
+export const Link = styled.a`
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--purple);
 
-export const Input = styled.input``
+    cursor: pointer;
+`
+
+export const Input = styled.input`
+    width: 100%;
+    height: 3.3rem; // 52px
+    padding: 1rem 0.75rem; // 16px 12px
+
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: 0.25rem;
+
+    ::placeholder {
+        font-size: 0.875rem;
+        font-weight: 400;
+        color: var(--gray-400);
+    }
+
+    :focus {
+        border: 1px solid var(--purple);
+    }
+
+    :active {
+        border: 1px solid var(--purple);
+    }
+
+    :hover {
+        border: 1px solid var(--purple);
+    }
+
+`
 
